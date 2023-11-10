@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Information</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #b4b5b6, #e74c3c);
+            background-size: 400% 400%;
+        }
+
+        .table-container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            overflow: auto;
+            height: auto
+                /* Set the maximum height for vertical scrolling */
+        }
+
+        .table-container table {
+            width: 100%;
+            white-space: nowrap;
+            /* Allow horizontal scrolling */
+            border-collapse: collapse;
+        }
+
+        .table-container th,
+        .table-container td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table-container th {
+            background-color: #f2f2f2;
+        }
+
+        .table-container h2 {
+            text-align: center;
+        }
+
+        .table-container::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .table-container::-webkit-scrollbar-thumb {
+            background-color: #3498db;
+            border-radius: 5px;
+        }
+
+        .table-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .table-container table tbody tr:hover {
+            background-color: #f2f2f2;
+            /* Highlight row on hover */
+        }
+
+        .countylist {
+            background-color: blue;
+        }
+
+        .countylist {
+            background-color: rgb(238, 232, 232);
+        }
+
+        p {
+            background-color: rgb(214, 205, 205) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container table-container">
+        <h2>TotalValue Repository</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>STATE</th>
+                    <th>COUNTY</th>
+                    <th>TOWNSHIP</th>
+                    <th>VALUES CALCULATION BASED ON </th>
+                    <th>TOTAL VALUE CALCULATION</th>
+                    <th>REMARKS</th>
+                    <th>TOTAL VALUE CALCULATION LINK</th>
+                    <th>TAX ESTIMATOR LINK</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table data goes here (replace with actual data) -->
+                <tr>
+                    <td>California</td>
+                    <td class="countylist"> Fresno, </BR>
+                        Kern,</BR>San Diego,</BR>Riverside,</BR>Tulare,</BR>Solano,</BR>San Luis Obispo,</BR>Santa
+                        Clara,</BR>Stanislaus,</BR>San Joaquin,</BR>Contra Costa,</BR>Madera,</BR>
+                        Sacramento,</BR>Yolo,</BR>Del Norte,</BR>Imperial,</BR>Santa Barbara,</BR>Merced,</BR>Orange
+                    </td>
+                    <td>ALL</td>
+                    <td>Value calculation is based on exemption codes</td>
+                    <td>
+                        <b>Homeowner Exemption:</b>
+                        <P>TotalValue = (Marketvalue - 7000)</P></BR>
+
+                        <b>Exemption is NULL </b> <br>
+                        <p> Totalvalue = Marketvalue</p><br>
+
+                    </td>
+                    <td>
+                        <p>For Disabled,Veteran exemption Total Value = (marketval - 161083) for most of the accounts
+                        </p>
+
+                    </td>
+                    <td><a href="https://www.boe.ca.gov/proptaxes/exempt.htm">Calculation Link</a></td>
+                    <td><a href="https://tax.ocgov.com/tcweb/ttc_tmpl_1.asp">Estimator Link</a></td>
+                </tr>
+
+                <tr>
+                    <td>Georgia</td>
+                    <td class="countylist"> Cobb, </BR>
+                        Chatham,</BR>DeKalb,</BR>Fayette,</BR>Fulton,</BR>Gwinnett,</BR>Henry County,</BR>Forsyth
+                        ,</BR>Coweta,</BR>Glynn
+                    </td>
+                    <td>ALL</td>
+                    <td>Value Calculation is based on MarketValue</td>
+                    <td>
+                        <P>[Assessed value] = ([Marketvalue] *40%)</P></BR>
+
+
+
+                    </td>
+                    <td>
+                        <p>Unable to confime - Agricultural,Forest Land,Timber,Equipment, Machinery, and Fixtures
+                            Property </p>
+
+                    </td>
+                    <td><a href="https://dor.georgia.gov/property-tax-valuation#assessed_values">Calculation Link</a>
+                    </td>
+                    <td><a href="https://www.homeatlanta.com/property_tax/fulton_county_unincorporated.htm">Estimator
+                            Link</a></td>
+                </tr>
+                <tr>
+                    <td>Illinois</td>
+                    <td class="countylist"> DuPage, </BR>
+                        Winnebago,</BR>Kankakee,</BR>McHenry,</BR>Kendall,</BR>
+                    </td>
+                    <td>ALL</td>
+                    <td>Value Calculation is based on Assessedtotal</td>
+                    <td>
+                        <P>Landvalue +Improvedvalue = AssessedTotal </BR>
+                            MarketValue = (AssessedTotal *3)
+                        </P></BR>
+
+
+
+                    </td>
+                    <td>
+                        <p> </p>
+
+                    </td>
+                    <td><a href=" ">Verified by assessor site</a></td>
+                    <td><a href=" ">Verified by assessor site</a></td>
+                </tr>
+                <tr>
+                    <td>Illinois</td>
+                    <td class="countylist"> Will, </BR>
+                        Kane,</BR>Grundy,</BR>Lake
+                    </td>
+                    <td>ALL</td>
+                    <td>Value Calculation is based on Assessedtotal</td>
+                    <td>
+                        <P>Landvalue +Improvedvalue = AssessedTotal </BR>
+                            MarketValue = (AssessedTotal *3.0003)
+                        </P></BR>
+
+
+
+                    </td>
+                    <td>
+                        <p> </p>
+
+                    </td>
+                    <td><a href=" ">Verified by assessor site</a></td>
+                    <td><a href=" ">Verified by assessor site</a></td>
+                </tr>
+                <tr>
+                    <td>Illinois</td>
+                    <td class="countylist"> Cook </BR>
+
+                    </td>
+                    <td>ALL</td>
+                    <td>Value Calculation is based on classcode and landusecode</td>
+                    <td>
+                        <P> [LUC's Value Calc] * AssessedTotal = MarketTotal</BR>
+                            These LUCs valuecalc is (AssessedTotal * 10)
+                            100,190,200,201,239,241,288,297,301,313,397,
+                            203,212,224,278,314,315,318,390,391,396,399,
+                            915,996,202,207,209,213,234,290,295,299,914,
+                            918,991,997,204,205,206,208,210,211,990,300,
+                            2-99,913,225,218,219,236
+                        </P></BR> 
+                        <p>These LUCs valuecalc is (AssessedTotal * 5)
+                        423,428,435,499,418,401,417,
+                        422,427,480,490,491,492,493,497 </p></BR> 
+                        <p>These LUCs valuecalc is (AssessedTotal * 4)
+                            526,535,500,501,580,583,587,516,517,522,
+                            530,533,590,593,597,599,523,527,528,529,
+                            531,532,591,592,581,550,670B,589,792,799,
+                            679A,823A,829B,833A,880A,893B,637,799B</p></BR> 
+
+
+
+                    </td>
+                    <td>
+                        <p> </p>
+
+                    </td>
+                    <td><a href=" ">Verified by assessor site</a></td>
+                    <td><a href=" ">Verified by assessor site</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
